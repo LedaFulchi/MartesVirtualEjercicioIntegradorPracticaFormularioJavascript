@@ -43,11 +43,11 @@ function validarContacto() {
 
     if (errorMessages.length > 0) {
         alert('Por favor, corrija los siguientes errores:\n\n' + errorMessages.join('\n'));
-        return false; //Si da error me muestra en pantalla el campo con error.
+        return false; 
     } else {
-        alert(`Gracias por contactarme ${nombreApellido}. Ni bien me sea posible le estaré respondiendo.`);
+        alert(`Gracias por contactarme ${nombreApellido}. Ni bien me sea posible le estaré respondiendo al mail ${correoElectronico} o a su ${telefono}`);
 
-        // Limpieza del formulario para volver a llenarlo.
+        
         document.getElementById('nombreApellido').value = '';
         document.getElementById('correoElectronico').value = '';
         document.getElementById('telefono').value = '';
