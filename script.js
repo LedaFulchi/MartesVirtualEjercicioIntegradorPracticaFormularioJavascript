@@ -45,7 +45,7 @@ function validarContacto() {
         alert('Por favor, corrija los siguientes errores:\n\n' + errorMessages.join('\n'));
         return false; 
     } else {
-        alert(`Gracias por contactarme ${nombreApellido}. Ni bien me sea posible le estaré respondiendo al mail ${correoElectronico} o a su ${telefono}`);
+        alert(`Gracias por contactarme ${nombreApellido}. En breve le estaré respondiendo al mail ${correoElectronico} o a su ${telefono}`);
 
         
         document.getElementById('nombreApellido').value = '';
